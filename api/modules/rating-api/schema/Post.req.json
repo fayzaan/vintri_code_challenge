@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "beerId": {
+      "type": "number",
+      "description": "The ID of the beer you're rating"
+    },
+    "rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "comment": {
+      "type": "string",
+      "maxLength": 160
+    }
+  },
+  "required": ["beerId", "rating"]
+}

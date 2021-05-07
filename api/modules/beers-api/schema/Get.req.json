@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "beer_name": {
+      "type": "string",
+      "description": "The name of beer to search for"
+    }
+  }
+}

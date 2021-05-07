@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "beerId": {
+      "type": "string",
+      "pattern": "^[0-9]*$",
+      "description": "The id of beer to search ratings for"
+    },
+    "beerIds": {
+      "type": "array",
+      "item": {
+        "type": "string",
+        "pattern": "^[0-9]*$"
+      },
+      "description": "The ids of beers to search ratings for"
+    }
+  },
+  "oneOf": [
+    {
+      "required": ["beerId"]
+    },
+    {
+      "required": ["beerIds"]
+    }
+  ]
+}
